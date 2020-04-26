@@ -11,6 +11,7 @@
   },
   "author": "",
   "license": "ISC",
+  "private" : true,
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.3",
