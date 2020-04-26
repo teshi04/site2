@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "format": "prettier --write index.html"
+    "build": "webpack",
+    "format": "prettier --write dist/index.html"
   },
   "author": "",
   "license": "ISC",

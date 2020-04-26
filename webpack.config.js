@@ -1,3 +1,4 @@
+const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 module.exports = [{
@@ -6,6 +7,10 @@ module.exports = [{
         // This is necessary for webpack to compile
         // But we never use style-bundle.js
         filename: 'style-bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
+    devServer: {
+        contentBase: './dist',
     },
     module: {
         rules: [
