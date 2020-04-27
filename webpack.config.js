@@ -1,5 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = [{
     entry: './app.scss',
@@ -12,6 +13,11 @@ module.exports = [{
     devServer: {
         contentBase: './dist',
     },
+    plugins: [
+        new CopyPlugin([
+            { from: 'static', to: '.' }
+        ]),
+    ],
     module: {
         rules: [
             {
