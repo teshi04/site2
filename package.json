@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "format": "prettier --write static/index.html"
+    "format": "prettier --single-quote --write \"{,*/**/}*.{js,html}\""
   },
   "author": "",
   "license": "ISC",

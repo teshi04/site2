@@ -1,5 +1,5 @@
-import {MDCRipple} from '@material/ripple/index';
+import { MDCRipple } from '@material/ripple/index'
 
-const ripple = new MDCRipple(document.querySelector('.foo-button'));
+const ripple = new MDCRipple(document.querySelector('.foo-button'))
 
-console.log('hello world');
+console.log('hello world')
