@@ -1,18 +1,21 @@
 @use '@material/button/mdc-button';
 @use '@material/button';
+@use "@material/card";
 @import '@material/typography/mdc-typography';
 @import '@material/elevation/mdc-elevation';
+@import '@material/card/mdc-card';
+@import '@material/layout-grid/mdc-layout-grid';
 @import './variables';
-
-.foo-button {
-  @include button.container-fill-color(darksalmon);
-}
 
 body {
   font-family: 'Roboto';
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
   background-color: $mdc-theme-background;
+}
+
+a {
+  text-decoration: none;
 }
 
 .title {
@@ -35,4 +38,26 @@ body {
   margin-left: 20px;
   border: 1px solid transparent;
   border-radius: 50%;
+}
+
+.mdc-card {
+  @include card.shape-radius(16px);
+  background-color: #fff;
+}
+
+.content-card .content-card__media {
+  border-radius: 16px 16px 0 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-card .mdc-card__supporting-text {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.content-card .mdc-card__title {
+  padding-left: 16px;
+  padding-right: 16px;
 }

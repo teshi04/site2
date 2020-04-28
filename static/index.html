@@ -13,17 +13,40 @@
     <h1 class="title2">Yui Matsuura</h1>
 
     <div>
-      <img
-        src="image/nekouo.svg"
-        class="nekouo"
-        width="100px"
-        height="100px"
-      />
+      <img src="image/nekouo.svg" class="nekouo" width="100px" height="100px" />
     </div>
+ 
 
-    <button class="foo-button mdc-button">
-      <div class="mdc-button__ripple"></div>
-      <span class="mdc-button__label">Button</span>
-    </button>
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div
+            class="content-card mdc-card mdc-card--outlined mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
+          >
+            <img class="content-card__media" src="image/booksearch.png" />
+            <section class="mdc-card__primary">
+              <h1 class="mdc-card__title">
+                バーコード書籍検索
+              </h1>
+            </section>
+            <section class="mdc-card__supporting-text">
+              ISBN バーコードをカメラでスキャンすると本の情報と Kindle
+              版が有無が分かります
+            </section>
+            <section class="mdc-card__actions">
+              <a
+                href="https://play.google.com/store/apps/details?id=jp.tsur.booksearch"
+              >
+                <button
+                  class="foo-button mdc-button mdc-card__action mdc-card__action--button"
+                >
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">more</span>
+                </button>
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
