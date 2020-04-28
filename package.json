@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "format": "prettier --single-quote --write \"{,*/**/}*.{js,html}\""
+    "format": "prettier --single-quote --write \"{,*/**/}*.{js,html,scss}\""
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "@material/button": "^6.0.0",
-    "@material/ripple": "^6.0.0"
+    "@material/elevation": "^6.0.0",
+    "@material/ripple": "^6.0.0",
+    "@material/typography": "^6.0.0"
   }
 }

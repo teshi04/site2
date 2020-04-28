@@ -1,6 +1,30 @@
 @use '@material/button/mdc-button';
 @use '@material/button';
+@import '@material/typography/mdc-typography';
+@import '@material/elevation/mdc-elevation';
+@import './variables';
 
 .foo-button {
   @include button.container-fill-color(darksalmon);
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+  background-color: $mdc-theme-background;
+}
+
+.title {
+  @include mdc-typography(headline1);
+  color: $text-color;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.title2 {
+  @include mdc-typography(headline2);
+  color: $text-color;
+  text-align: center;
+  margin: 5px auto;
 }
