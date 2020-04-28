@@ -16,15 +16,23 @@ body {
 }
 
 .title {
-  @include mdc-typography(headline1);
+  @include mdc-typography(headline3);
   color: $text-color;
   text-align: center;
   margin: 5px auto;
 }
 
 .title2 {
-  @include mdc-typography(headline2);
+  @include mdc-typography(headline4);
   color: $text-color;
   text-align: center;
   margin: 5px auto;
+}
+
+.nekouo {
+  @include mdc-elevation(2);
+  margin-top: 50px;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
