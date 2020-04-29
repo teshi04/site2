@@ -6,6 +6,7 @@
 @use '@material/elevation';
 @use "@material/list/mdc-list";
 @use "@material/icon-button";
+@use "@material/icon-button/mdc-icon-button";
 @import '@material/layout-grid/mdc-layout-grid';
 @import './variables';
 
@@ -50,6 +51,7 @@ a:visited {
 }
 
 .content-card {
+  @include card.core-styles;
   @include card.shape-radius(16px);
   @include card.outline(#bdbdbd, 1px);
   background-color: #ffffff;
@@ -83,17 +85,10 @@ a:visited {
 
 .center {
   text-align: center;
-}
-
-.link-icon-text {
-  width: 44px;
-  text-decoration: none;
+  margin: auto;
 }
 
 .link-icon {
-  @include icon-button.core-styles;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
+  @include icon-button.size(44px);
   padding: 0px 4px 0px 0px;
 }
