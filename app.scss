@@ -5,7 +5,7 @@
 @use '@material/typography';
 @use '@material/elevation';
 @use "@material/list/mdc-list";
-@import '@material/card/mdc-card';
+@use "@material/icon-button";
 @import '@material/layout-grid/mdc-layout-grid';
 @import './variables';
 
@@ -25,7 +25,6 @@ a:visited {
   @include typography.typography(headline4);
   font-family: 'Roboto-light';
   color: $text-color;
-  text-align: center;
   margin: 5px auto;
 }
 
@@ -33,7 +32,6 @@ a:visited {
   @include typography.typography(headline5);
   font-family: 'Roboto-light';
   color: $text-color;
-  text-align: center;
   margin: 5px auto;
 }
 
@@ -83,6 +81,19 @@ a:visited {
   background-color: #ffc400;
 }
 
-.card-button {
-  @include button.shape-radius(16px);
+.center {
+  text-align: center;
+}
+
+.link-icon-text {
+  width: 44px;
+  text-decoration: none;
+}
+
+.link-icon {
+  @include icon-button.core-styles;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding: 0px 4px 0px 0px;
 }
