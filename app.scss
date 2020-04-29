@@ -55,6 +55,11 @@ a:visited {
   @include card.shape-radius(16px);
   @include card.outline(#bdbdbd, 1px);
   background-color: #ffffff;
+  height: 100%;
+}
+
+.mdc-card__primary-action {
+  height: 100%;
 }
 
 .content-card__media {
