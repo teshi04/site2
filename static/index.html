@@ -2,51 +2,77 @@
 <html>
   <head>
     <link rel="stylesheet" href="bundle.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="bundle.js" async></script>
     <title>teshi.dev</title>
   </head>
+
   <body>
     <marquee direction="down" behavior="alternate">
       <marquee behavior="alternate">🐟</marquee>
     </marquee>
-    <h1 class="title">teshi04</h1>
-    <h1 class="title2">Yui Matsuura</h1>
 
     <div>
       <img src="image/nekouo.svg" class="nekouo" width="100px" height="100px" />
     </div>
- 
+    <h1 class="title">teshi04</h1>
+    <h1 class="title2">Yui Matsuura</h1>
 
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div
-            class="content-card mdc-card mdc-card--outlined mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
-          >
-            <img class="content-card__media" src="image/booksearch.png" />
-            <section class="mdc-card__primary">
-              <h1 class="mdc-card__title">
-                バーコード書籍検索
-              </h1>
-            </section>
-            <section class="mdc-card__supporting-text">
-              ISBN バーコードをカメラでスキャンすると本の情報と Kindle
-              版が有無が分かります
-            </section>
-            <section class="mdc-card__actions">
-              <a
-                href="https://play.google.com/store/apps/details?id=jp.tsur.booksearch"
-              >
-                <button
-                  class="foo-button mdc-button mdc-card__action mdc-card__action--button"
-                >
-                  <div class="mdc-button__ripple"></div>
-                  <span class="mdc-button__label">more</span>
-                </button>
-              </a>
-            </section>
+    <ul class="mdc-list mdc-list--dense mdc-list--non-interactive">
+      <li class="mdc-list-item">
+        <i class="material-icons md-12 profile-icon">cake</i> January, 1993
+      </li>
+      <li class="mdc-list-item">
+        <i class="material-icons profile-icon">place</i> Tokyo, Japan
+      </li>
+      <li class="mdc-list-item">
+        <i class="material-icons profile-icon">mail</i> teshi04@gmail.com
+      </li>
+      <li class="mdc-list-item">
+        <a href="https://twitter.com/teshi04"
+          ><i class="link-icon fab fa-twitter"></i
+        ></a>
+        <a href="http://github.com/teshi04"
+          ><i class="link-icon fab fa-github"></i
+        ></a>
+        <a href="http://teshi04.hatenablog.com"
+          ><i class="link-icon fas fa-pen-nib"></i
+        ></a>
+      </li>
+    </ul>
+
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div
+          class="content-card mdc-card mdc-card--outlined mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
+          tabindex="0"
+        >
+          <div class="mdc-card__primary-action">
+            <a
+              href="https://play.google.com/store/apps/details?id=jp.tsur.booksearch"
+            >
+              <img class="content-card__media" src="image/booksearch.png" />
+              <section class="mdc-card__primary">
+                <h1 class="mdc-card__title">
+                  バーコード書籍検索
+                </h1>
+              </section>
+              <section class="mdc-card__supporting-text">
+                ISBN バーコードをカメラでスキャンすると本の情報と Kindle
+                版が有無が分かります
+              </section>
+            </a>
           </div>
         </div>
       </div>
     </div>
+
+    <button class="mdc-fab" aria-label="Favorite">
+      <div class="mdc-fab__ripple"></div>
+      <span class="mdc-fab__icon material-icons">star_outline</span>
+    </button>
   </body>
 </html>

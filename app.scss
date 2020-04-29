@@ -1,63 +1,81 @@
 @use '@material/button/mdc-button';
 @use '@material/button';
 @use "@material/card";
-@import '@material/typography/mdc-typography';
-@import '@material/elevation/mdc-elevation';
+@use "@material/fab/mdc-fab";
+@use '@material/typography';
+@use '@material/elevation';
 @import '@material/card/mdc-card';
 @import '@material/layout-grid/mdc-layout-grid';
 @import './variables';
 
 body {
-  font-family: 'Roboto';
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
   background-color: $mdc-theme-background;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: $text-color;
 }
 
 .title {
-  @include mdc-typography(headline3);
+  @include typography.typography(headline3);
+  font-family: 'Roboto-light';
   color: $text-color;
   text-align: center;
   margin: 5px auto;
 }
 
 .title2 {
-  @include mdc-typography(headline4);
+  @include typography.typography(headline4);
+  font-family: 'Roboto-light';
   color: $text-color;
   text-align: center;
   margin: 5px auto;
 }
 
 .nekouo {
-  @include mdc-elevation(2);
+  @include elevation.elevation(0);
   margin-top: 50px;
   margin-left: 20px;
   border: 1px solid transparent;
   border-radius: 50%;
 }
 
-.mdc-card {
+.content-card {
   @include card.shape-radius(16px);
-  background-color: #fff;
+  @include card.outline(#bdbdbd, 1px);
+  background-color: #ffffff;
 }
 
-.content-card .content-card__media {
-  border-radius: 16px 16px 0 0;
+.content-card__media {
+  border-radius: 15px 15px 0 0;
   display: block;
   width: 100%;
   height: auto;
 }
 
-.content-card .mdc-card__supporting-text {
+.mdc-card__supporting-text {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.mdc-card__title {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.content-card .mdc-card__title {
-  padding-left: 16px;
-  padding-right: 16px;
+.mdc-fab {
+  @include elevation.elevation(2);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #ffc400;
+}
+
+.card-button {
+  @include button.shape-radius(16px);
 }
