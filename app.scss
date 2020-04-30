@@ -88,12 +88,21 @@ a:visited {
   background-color: #ffc400;
 }
 
-.center {
+.name-container {
   text-align: center;
   margin: auto;
 }
 
+.profile-container {
+  justify-content: center;
+}
+
+.link-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 .link-icon {
   @include icon-button.size(44px);
-  padding: 0px 4px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
