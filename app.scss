@@ -78,6 +78,13 @@ a:visited {
 .mdc-card__title {
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 4px;
+}
+
+.tag {
+  @include typography.typography(body2);
+  font-family: 'Roboto-light';
+  margin-bottom: 8px;
 }
 
 .mdc-fab {
@@ -90,19 +97,25 @@ a:visited {
 
 .name-container {
   text-align: center;
-  margin: auto;
+  margin-bottom: 16px;
 }
 
 .profile-container {
+  display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 .link-icon-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
+}
+
+.content-card .material-icons {
+  padding: 0px 8px 0px 0px;
 }
 
 .link-icon {
   @include icon-button.size(44px);
-  padding: 0px 0px 0px 0px;
 }
